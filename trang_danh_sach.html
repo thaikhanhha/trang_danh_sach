@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./singup.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <script src="../JAVASCRIPT/sing.js"></script>
+    <link rel="stylesheet" href="lo.css">
+
+    <title>Đăng kí tài khoản</title>
+</head>
+<body>
+      <nav class="navbar navbar-expand-sm" style="background-color: rgb(21, 21, 21);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color: white; font-weight: bold; font-size:x-large;">5Hacker</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html" style="color: white;">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">Danh sách</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">Liên hệ/góp ý</a>
+              </li>          
+            </ul>
+            <div class="navbar-nav ms-auto mb-2 mb-sm-0" style=" padding-left: 20px; padding-right: 20px;">
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" style="color: white;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="row user-icon">
+                    <div class="col-4 text-center"> <i class="fa fa-user-circle-o" style="font-size:24px;  margin-top: 5px; margin-bottom: 5px;"></i></div>
+                    <div class="col-8 text-right" style="margin-top: 5px;">Tài khoản</div>
+                  </div>
+                </a>
+                <ul class="dropdown-menu" data-bs-theme="dark">
+                  <li><a class="dropdown-item" href="./index.html" >Đăng kí</a></li>
+                  <li><a class="dropdown-item" href="./singin.html" >Đăng nhập</a></li>  
+                </ul>
+              </li>  
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--Phân nội dung của mội người nằm trong phần này-->
+      <div class="container">
+        <!-- <div class="row pop-up-sing-up" style="color:rgb(240, 221, 203);">
+            <div class="col-md-7 hiden-on-mobile">
+                <h3 class="text-center" style="margin-top: 30px;  font-family:Arial, Helvetica, sans-serif; font-weight: bolder;">Well come to 5Hacker</h3>
+                <div style="margin-top: 120px; padding-left: 30px; padding-right: 30px; font-size: large;">Nền tảng bán khóa học và tấn công mạng hàng đầu Việt Nam</div>
+                <div style="margin-top: 30px; padding-left: 30px; padding-right: 30px; font-size: large;">Chỉ với 3 bước, bạn sẽ xem được nội dung mà chúng tôi sẽ đào tạo bạn thành Hacker hàng đầu</div>
+                <ul style="padding-left: 50px;">
+                  <li>Tạo tài khoản</li>
+                  <li>Đăng nhập</li>
+                  <li>Mua khóa học</li>
+                </ul>   
+            </div>
+            <div class="col-md-5 col-12 padding-on-mb" style="padding-right: 30px;">
+                <h4 style="margin-top: 30px; margin-bottom: 20px; font-weight: bold;" class="center-on-mb">Tạo tài khoản</h4>
+                <div>
+                  <label for="exampleFormControlInput1" class="form-label" style="font-weight: bold;">Tên tài khoản</label>
+                  <input type="text" class="form-control" id="username" placeholder="Tên của bạn, nickname,...">
+                </div>
+                <label style="margin-top: 10px; margin-bottom: 10px; font-weight: bold;" for="inputPassword5" class="form-label">Mật khẩu</label>
+                <input type="password" id="password1" class="form-control" aria-describedby="passwordHelpBlock">
+                <label style="margin-top: 10px; margin-bottom: 10px; font-weight: bold;" for="inputPassword5" class="form-label">Xác nhận lại mật khẩu</label>
+                <input type="password" id="password2" class="form-control" aria-describedby="passwordHelpBlock">
+                <div id="checkpassword">Vui lòng kiểm tra lại mật khẩu</div>
+                <div class="centerbutton"><button class="mybutton" style="margin-top: 20px;  height: 33px; width: 80px; border: none; border-radius: 5px;" onclick="layThongTin();">Đăng kí</button></div>
+                <div style="margin-top: 20px;">Nếu bạn đã có tài khoản, hãy tới trang <a style="color: rgb(102, 242, 255);" href="./singin.html">đăng nhập</a></div>
+            </div>
+            <div style="color:rgb(240, 221, 203); padding-left: 30px; padding-right: 30px;">
+              Hãy chắc chắn rằng bạn đã đọc <a href="" style="color: rgb(255, 131, 131);">Điều khoản sử dụng</a> của công ty 5Hacker chúng tôi và vui lòng xem <a href="" style="color: rgb(255, 131, 131);">Điều khoản bảo mật </a>trước khi tạo tài khoản.
+            </div>
+        </div> -->
+        
+        <div class="menu_01">   
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="2.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="4.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="buttons">
+                    <button id="prev"> < </button>
+                    <button id="next"> > </button>
+                </div>
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    
+                </ul>
+            </div>
+            <script src="lo.js"></script>
+        </div>
+        <p></p>
+        <div class="line1">
+            <b>Các Khóa Học Premium</b>
+            <div class="row"> 
+              <div class="col-3">
+                <div class="python">
+                  <img src="python.png" alt="Avatar" class="image">
+                  <div class="middle">
+                    <div class="text"><a href="#" style="text-decoration-line: none; color:white;">Xem Thêm</a></div>
+                  </div>
+                  <b style="width:241px; height: auto; text-align: center;">Lập Trình Python</b>
+                </div>
+              </div>  
+              <div class="col-3">
+                <div class="cpp">
+                  <img src="c++.png" alt="Avatar" class="image">
+                  <div class="middle1">
+                    <div class="text"><a href="#" style="text-decoration-line: none; color:white;">Xem Thêm</a></div>
+                  </div>
+                  <b style="width:241px; height: auto; text-align: center;">Lập Trình C++</b>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="java">
+                  <img src="java.png" alt="Avatar" class="image">
+                  <div class="middle2">
+                    <div class="text"><a href="#" style="text-decoration-line: none; color:white;">Xem Thêm</a></div>
+                  </div>
+                  <b style="width:241px; height: auto; text-align: center;">Lập Trình Java</b>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="js">
+                  <img src="js.jpg" alt="Avatar" class="image">
+                  <div class="middle3">
+                    <div class="text"><a href="#" style="text-decoration-line: none; color:white;">Xem Thêm</a></div>
+                  </div>
+                  <b style="width:241px; height: auto; text-align: center;">Lập Trình Js</b>
+                </div>
+              </div>
+            </div>   
+        </div> 
+      </div>
+      <!--Phân nội dung của mội người nằm trên phần này-->
+
+      <div class="container-fluid" style="background-color: rgb(21, 21, 21); height: auto; margin-top: 0px; padding-bottom: 20px; padding-top: 20px;">
+        <footer style="color: white; padding-top: 10px; font-size: small;">
+            <div class="row" style="padding-left: 40px; padding-right: 40px;">
+                <div class="col-md-3 col-6" style="margin-top: 20px;">
+                    <h4>
+                        Học lập trình để làm Hacker
+                    </h4>
+                    
+                        Điện thoại: 0123456789<br>
+                        Email: hackertop1sever@univers.galaxy<br>
+                        Địa chỉ: Số 123, Đường Vào Tim Crush, Quận 1, Tp.HCM
+                        
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6"  style="margin-top: 20px;">
+                       <h4>Về trang web này</h4>
+                       Điều khoản<br>
+                       Bảo mật<br>
+                       Cơ hội việc làm<br>           
+              </div>
+                <div class="col-md-3 col-6" style="margin-top: 20px;">
+                      <h4>Công cụ hỗ trợ</h4>
+                      Hack tất cả<br>
+                      DDOS<br>
+                      Đánh sập CIA<br>
+                      Crack mọi loại game
+                </div>
+                <div class="col-md-3 col-6" style="margin-top: 20px;">
+                     <h4>Công ty cổ phần HACKER đa vũ trụ tài trợ</h4>
+                     Mã số thuế: 99999999<br>
+                     Ngày thành lập: 01/01/2029<br>
+                     Lĩnh vực: Công nghệ, giáo dục, lập trình, hack tất cả. Chúng tôi xây dựng và phát triển những sản phẩm mang lại giá trị cho cộng đồng.
+
+                </div>
+            </div>
+          <div class="container-fluid" style="margin-top: 50px; margin-bottom: 40px;">
+            <div class="row"  style="padding-left: 40px; padding-right: 40px;">
+                <div class="col-md-7 col-12" style="font-size: medium; margin-bottom: 20px;">© 2023. Nền tảng Hacker hàng đầu Việt Nam</div>
+              <div class="col-md-5 col-12">
+                <i class="fa fa-facebook-square" style="font-size: 35px; margin-right: 20px;"></i>
+                <i class="fa fa-twitter-square" style="font-size:35px"></i>
+                <i class="fa fa-instagram" style="font-size:35px; margin-left: 20px;"></i>
+              </div>
+              
+            </div>
+          </div>
+        </footer>
+      </div>
+</body>
+</html>
